@@ -15,10 +15,13 @@ public class BaseScreen {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public boolean textElementPresent(AndroidElement element, String text, int time){
+    public boolean textElementPresent(AndroidElement element, String text, int time) {
 
-        return new WebDriverWait(driver,time).until(ExpectedConditions.textToBePresentInElement(element, text));
+        return new WebDriverWait(driver, time).until(ExpectedConditions.textToBePresentInElement(element, text));
     }
 
+    public void clickWait(AndroidElement element, int time) {
+        new WebDriverWait(driver, time).until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
 
 }
