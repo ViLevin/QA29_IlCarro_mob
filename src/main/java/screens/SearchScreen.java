@@ -18,8 +18,18 @@ public class SearchScreen extends BaseScreen {
     AndroidElement btnRegistration;
     @FindBy(xpath = "//*[@text='Login']")
     AndroidElement btnLogin;
-    @FindBy(xpath = "//hierarcy/android.widget.Toast")
+    @FindBy(xpath = "//hierarchy/android.widget.Toast")
     AndroidElement popUpMessageSuccess;
+
+    @FindBy(xpath = "//*[@text='My Cars']")
+    AndroidElement btnMyCars;
+    @FindBy(xpath = "//*[@text='Logout']")
+    AndroidElement btnLogout;
+
+
+    public void clickBtnMyCars(){
+        clickWait(btnMyCars, 8);
+    }
 
 
     public void clickBtnDots() {
