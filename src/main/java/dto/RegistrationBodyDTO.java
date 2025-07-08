@@ -13,7 +13,7 @@ import lombok.*;
 public class RegistrationBodyDTO {
     private String username;
     private String password;
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
 
 }

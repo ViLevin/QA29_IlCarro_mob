@@ -19,8 +19,8 @@ public class RegistrationTests extends AppiumConfig {
 
         int i = new Random().nextInt(1000);
         RegistrationBodyDTO user = RegistrationBodyDTO.builder()
-                .firstname("Johny" + i)
-                .lastname("Green")
+                .firstName("Johny" + i)
+                .lastName("Green")
                 .username("johnygreen" + i + "@gmail.com")
                 .password("Zxcvb123!")
                 .build();
@@ -41,8 +41,8 @@ public class RegistrationTests extends AppiumConfig {
 
         int i = new Random().nextInt(1000);
         RegistrationBodyDTO user = RegistrationBodyDTO.builder()
-                .firstname("Johny" + i)
-                .lastname("Green")
+                .firstName("Johny" + i)
+                .lastName("Green")
                 .username("johnygreen" + i + "@gmail.com")
                 .password("Zxcvb123!")
                 .build();
@@ -63,8 +63,8 @@ public class RegistrationTests extends AppiumConfig {
 
         int i = new Random().nextInt(1000);
         RegistrationBodyDTO user = RegistrationBodyDTO.builder()
-                .firstname("Johny" + i)
-                .lastname("Green")
+                .firstName("Johny" + i)
+                .lastName("Green")
                 .username("johnygreen" + i + "gmail.com")
                 .password("Zxcvb123!")
                 .build();

@@ -25,17 +25,17 @@ public class RegistrationScreen extends BaseScreen {
 
 
     public void typeRegForm(RegistrationBodyDTO user) {
-        regName.sendKeys(user.getFirstname());
-        regLastName.sendKeys(user.getLastname());
+        regName.sendKeys(user.getFirstName());
+        regLastName.sendKeys(user.getLastName());
         regEmail.sendKeys(user.getUsername());
         regPassword.sendKeys(user.getPassword());
     }
 
-    public void clickCheckBox(){
+    public void clickCheckBox() {
         checkBox.click();
     }
 
-    public void clickBtnYalla(){
+    public void clickBtnYalla() {
         btnYalla.click();
     }
 }
